@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2021-04-15T08:08:10.668Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>标签二次测试</title>
+    <link href="http://example.com/2021/04/13/%E6%B5%8B%E8%AF%95/%E6%A0%87%E7%AD%BE%E4%BA%8C%E6%AC%A1%E6%B5%8B%E8%AF%95/"/>
+    <id>http://example.com/2021/04/13/%E6%B5%8B%E8%AF%95/%E6%A0%87%E7%AD%BE%E4%BA%8C%E6%AC%A1%E6%B5%8B%E8%AF%95/</id>
+    <published>2021-04-13T07:42:00.000Z</published>
+    <updated>2021-04-15T08:08:10.668Z</updated>
+    
+    <content type="html"><![CDATA[<p>标签二次测试</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;标签二次测试&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="测试" scheme="http://example.com/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="标签" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>笔记</title>
+    <link href="http://example.com/2021/04/13/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0/"/>
+    <id>http://example.com/2021/04/13/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0/</id>
+    <published>2021-04-13T05:40:03.000Z</published>
+    <updated>2021-04-13T05:41:07.146Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2021/04/13/%E7%AC%94%E8%AE%B0/%E5%85%B3%E4%BA%8E%E8%A2%AB%E6%8E%A7%E4%BB%B6%E7%9A%84%E5%80%BC%E4%BC%A0%E9%80%92/"/>
+    <id>http://example.com/2021/04/13/%E7%AC%94%E8%AE%B0/%E5%85%B3%E4%BA%8E%E8%A2%AB%E6%8E%A7%E4%BB%B6%E7%9A%84%E5%80%BC%E4%BC%A0%E9%80%92/</id>
+    <published>2021-04-13T05:40:00.000Z</published>
+    <updated>2021-04-15T08:03:30.914Z</updated>
+    
+    <content type="html"><![CDATA[<p>笔记<em>本文共184词，阅读时间&lt;1分钟</em></p><h1 id="笔记：关于currentTarget无法获取被监听控件值"><a href="#笔记：关于currentTarget无法获取被监听控件值" class="headerlink" title="笔记：关于currentTarget无法获取被监听控件值"></a>笔记：关于currentTarget无法获取被监听控件值</h1><p>目录自动显示带有搜索框输入值的文件</p><p>function serachTree() </p><p>想法：id：search监听自身一旦有值输入然后通过target.value获取输入值</p><p>$(“#search”).on(“input”, function(e){<br>        e.preventDefault();</p><p>​        var xx=e.currentTarget; //初始写法</p><p>​        未能实现功能</p><p>​        alert(inputContent);//查看值  系统提示undefined        </p><p>​    //修改后写法   var inputContent = e.target.value;</p><pre><code>    /*target和currentTarget的区别    target：触发事件的元素    currentTarget：事件绑定的元素。       要求获取 inpiut 输入框的内容，触发事件的元素是输入，监听者是id:search    要获取值应选择target，secarch未赋初始值所以一直是undefined    */    // 获取 inpiut 输入框的内容    var inputContent = e.target.value;</code></pre><p>tags：</p><p>- 笔记</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;笔记&lt;em&gt;本文共184词，阅读时间&amp;lt;1分钟&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&quot;笔记：关于currentTarget无法获取被监听控件值&quot;&gt;&lt;a href=&quot;#笔记：关于currentTarget无法获取被监听控件值&quot; class=&quot;headerlink&quot; title</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="http://example.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="js" scheme="http://example.com/tags/js/"/>
+    
+    <category term="监听" scheme="http://example.com/tags/%E7%9B%91%E5%90%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试</title>
+    <link href="http://example.com/2021/04/13/%E6%B5%8B%E8%AF%95/%E6%B5%8B%E8%AF%95/"/>
+    <id>http://example.com/2021/04/13/%E6%B5%8B%E8%AF%95/%E6%B5%8B%E8%AF%95/</id>
+    <published>2021-04-13T05:40:00.000Z</published>
+    <updated>2021-04-15T08:24:01.727Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="test"><a href="#test" class="headerlink" title="test"></a>test</h1><h2 id="test-1"><a href="#test-1" class="headerlink" title="test"></a>test</h2><h3 id="test-2"><a href="#test-2" class="headerlink" title="test"></a>test</h3><p>冲</p><p>冲冲冲</p><p>冲冲</p><p>冲</p><hr><h1 id="test-3"><a href="#test-3" class="headerlink" title="test"></a>test</h1><h2 id="test-4"><a href="#test-4" class="headerlink" title="test"></a>test</h2><h3 id="test-5"><a href="#test-5" class="headerlink" title="test"></a>test</h3><p>冲冲冲</p><p>冲冲冲</p><p>冲冲</p><h1 id="test-6"><a href="#test-6" class="headerlink" title="test"></a>test</h1><h2 id="test-7"><a href="#test-7" class="headerlink" title="test"></a>test</h2><p>冲冲</p><h3 id="test-8"><a href="#test-8" class="headerlink" title="test"></a>test</h3><p>冲冲冲冲</p><p>冲冲冲</p><h1 id="test-9"><a href="#test-9" class="headerlink" title="test"></a>test</h1><h2 id="test-10"><a href="#test-10" class="headerlink" title="test"></a>test</h2><h3 id="test-11"><a href="#test-11" class="headerlink" title="test"></a>test</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;test&quot;&gt;&lt;a href=&quot;#test&quot; class=&quot;headerlink&quot; title=&quot;test&quot;&gt;&lt;/a&gt;test&lt;/h1&gt;&lt;h2 id=&quot;test-1&quot;&gt;&lt;a href=&quot;#test-1&quot; class=&quot;headerlink&quot; title=&quot;test&quot;</summary>
+      
+    
+    
+    
+    <category term="测试二" scheme="http://example.com/categories/%E6%B5%8B%E8%AF%95%E4%BA%8C/"/>
+    
+    
+    <category term="测试" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="笔记" scheme="http://example.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>杂谈</title>
+    <link href="http://example.com/2021/04/13/%E6%9D%82%E8%B0%88/%E6%9D%82%E8%B0%88/"/>
+    <id>http://example.com/2021/04/13/%E6%9D%82%E8%B0%88/%E6%9D%82%E8%B0%88/</id>
+    <published>2021-04-13T05:13:00.000Z</published>
+    <updated>2021-04-13T06:34:13.936Z</updated>
+    
+    <content type="html"><![CDATA[<p>标签测试</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;标签测试&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="杂谈" scheme="http://example.com/tags/%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2021/04/13/%E6%9D%82%E5%9B%BE/%E6%9D%82%E5%9B%BE/"/>
+    <id>http://example.com/2021/04/13/%E6%9D%82%E5%9B%BE/%E6%9D%82%E5%9B%BE/</id>
+    <published>2021-04-13T05:12:28.388Z</published>
+    <updated>2021-04-15T08:02:34.892Z</updated>
+    
+    <content type="html"><![CDATA[<p>图片共0词，阅读时间&lt;1分钟</p><p><img src="/2021/04/13/%E6%9D%82%E5%9B%BE/%E6%9D%82%E5%9B%BE/Users\xiaorenyiwu\Desktop\cy\QQ图片20201128162452.jpg"></p><p><img src="/2021/04/13/%E6%9D%82%E5%9B%BE/%E6%9D%82%E5%9B%BE/Users\xiaorenyiwu\Desktop\cy\QQ图片20201128162409.jpg" alt="QQ图片20201128162409"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;图片共0词，阅读时间&amp;lt;1分钟&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2021/04/13/%E6%9D%82%E5%9B%BE/%E6%9D%82%E5%9B%BE/Users\xiaorenyiwu\Desktop\cy\QQ图片20201128162452.jpg&quot;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
